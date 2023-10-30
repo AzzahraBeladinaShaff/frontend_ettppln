@@ -1,13 +1,288 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Plus Jakarta Sans', sans-serif;font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.ant-layout {
+  min-height: 100vh;
+}
+.ant-layout-sider {
+  flex: 0 0 230px !important;
+  max-width: 230px !important;
+  min-width: 230px !important;
+  width: 230px !important;
+}
+.ant-layout-sider-collapsed{
+  flex: 0 0 80px !important;
+  max-width: 80px !important;
+  min-width: 80px !important;
+  width: 80px !important;
+}
+.logo {
+  background: white;
+  margin: 0;
+  height: 64px;
+}
+.iconsidebar {
+  color: transparent;
+  background: linear-gradient(rgb(164, 255, 179),rgb(0, 125, 250));
+  -webkit-background-clip: text;
+}
+.sidebarlogo {
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-left: 45px;
+}
+.sm-logo {
+  display: none;
+  transition: 0.3s;
+}
+.lg-logo {
+  transition: 0.3s;
+}
+.ant-layout-sider-collapsed .sm-logo{
+  display: block;
+  height: 50px;
+  padding: 10px 0 0 0;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+.ant-layout-sider-collapsed .lg-logo{
+  display: none;
+  transition: 0.3s;
+}
+main {
+  overflow-y: scroll;
+  background-color: transparent !important;
+}
+.ant-menu-title-content{
+  font-size: 16px;
+}
+.ant-layout-header h5 {
+  line-height: 20px;
+  font-size: 14px;
+}
+.ant-layout-header p {
+  line-height: 20px;
+  font-size: 13px;
+}
+.ant-layout-header div .badge {
+  top: 16px;
+  right: -6px;
+}
+
+.bgdashboard {
+  border-radius: 25px;
+  width: auto;
+  height: 550px;
+  flex-shrink: 0;
+}
+.bgwelcome {
+  border-radius: 25px;
+  background: linear-gradient(94deg, #007DFA 28.52%, #A4FFB3 120.62%);
+}
+.textdashboard{
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.textdashboard2{
+  color: #FFF;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.gradientbox {
+  background: linear-gradient(90deg, #168FF0 2.48%, #A4FFB3 118.79%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 300px;
+  height: 23px;
+  flex-shrink: 0;
+}
+.berandabox {
+  display: flex;
+  width: 300px;
+  height: 280px;
+  padding: 37px 30px 33px 30px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 30px 30px;
+  background: #FFF;
+  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.25);
+}
+.textmenu {
+  color: #168FF0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+.textmenu_p {
+  color: #525C60;
+  text-align: justify;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165.4%; /* 29.772px */
+}
+.textmenu_button {
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*HALAMAN LEMBUR*/
+.bglembur{
+  border-radius: 25px;
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+}
+.judul_font {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 20px 30px 0px 30px;
+}
+.judul_font2 {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 30px 0px 30px;
+}
+.select_bulan {
+  padding: 8px 10px 0px 10px;
+  justify-content: right;
+}
+.ant-select-selection {
+  border-color: black;
+}
+.text_isi {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  padding: 5px 10px 10px 30px;
+}
+
+.text_label {
+  padding-left: 30px;
+}
+.sd {
+  padding-top: 5px;
+}
+.button_batal{
+  color: black;
+  background-color: white;
+  border-color: black;
+  align-items: center;
+}
+.history_lembur{
+  padding-left: 280px;
+}
+.history_piket{
+  padding-left: 337px;
+}
+.history_premi{
+  padding-left: 230px;
+}
+
+/*REKAP*/
+
+.tombol{
+  width: 146px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+.catatan_top{
+  padding-top: 20px;
+}
+
+/*Data Pegawai*/
+
+.bginfopribadi{
+  border-radius: 25px;
+  width: 600px;
+  height: 330px;
+  flex-shrink: 0;
+}
+.bginfo{
+  border-radius: 20px;
+  height: 40px;
+}
+.informasi_pribadi {
+  padding: 4px 3px 3px 20px;
+  font-size: 20px;
+}
+.nama_lengkap{
+  padding: 10px 0px 10px 30px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.nama_depan{
+  padding: 0px 0px 0px 0px;
+}
+.bgdatapegawai{
+  border-radius: 25px;
+  width: 700px;
+  height: 420px;
+  flex-shrink: 0;
+  margin-top: 20px;
+}
+.judul_data {
+  padding: 8px 10px 10px 5px;
+}
+.bg_photo {
+  border-radius: 25px;
+  width: 400px;
+
+  flex-shrink: 0;
+}
+.photo_data{
+  width: 88px;
+  height: 85px;
+  border-radius: 108px;
+}
+.edit_photo {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+.hapus_update {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+.icon_upload {
+  font-size: 20px;
+}
+.upload_photo {
+  width: 300px;
+  margin: 0px 0px 0px 40px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+
+.bg_uploadphoto {
+  padding: 0px 0px 0px 0px;
+}
+.text_uploadphoto {
+  padding-left: 35px;
 }
